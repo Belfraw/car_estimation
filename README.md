@@ -1,24 +1,14 @@
-# car_estimation
+# CarEstimation  
 
-## Project setup
-```
-npm install
-```
+## Overview  
+You can get an automatic quote for your car.  
+The total amount will change when you select an option.  
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Demo  
 
-### Compiles and minifies for production
+## Installation  
 ```
-npm run build
+$ cd car_estimation
+$ npm run serve
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
