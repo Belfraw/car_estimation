@@ -6,7 +6,7 @@ The total amount will change when you select an option.
 
 ## Demo  
 ![サンプル](car.gif)
-![サンプル2](car.gif2)
+![サンプル2](car.gif)
 ## Installation  
 ```
 $ git clone https://github.com/Belfraw/car_estimation.git
