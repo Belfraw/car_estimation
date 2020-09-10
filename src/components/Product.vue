@@ -10,7 +10,7 @@
           </div>
           <div class="header__content__right">
             <h1 class="header__content__app">
-              自動車 見積もりシュミレーター
+              自動車 見積もりシミュレータ
             </h1>
           </div>
         </div>
