@@ -23,4 +23,5 @@ I was a little worried about how to display it with v-if because the additional 
 The problem is that when switching between the instrument panel image and the sheet image,
 the previously selected image remains, so I want to be able to switch it well.
 
+I'm not sure how to create a component, so I'd like to study in books and divide the code into components.
 ## Deploy
