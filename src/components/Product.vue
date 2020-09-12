@@ -104,50 +104,50 @@
           <div class="color__content__right__title">
             インテリアカラー
           </div>
-          <div class="color__content__right__image" v-if="isActive6 == '9'">
+          <div class="color__content__right__image" v-if="isActive3 == '1'">
             <img src="../assets/images/E9B4A4A9-A66F-48AC-A6F4-7EF1EE2F7D87_1_105_c.jpeg" alt="" class="color__content__right__image--seat ">
           </div>
-          <div class="color__content__right__image" v-if="isActive7 == '10'">
+          <div class="color__content__right__image" v-if="isActive3 == '2'">
             <img src="../assets/images/ハンドル赤.jpg" alt="" class="color__content__right__image--seat ">
           </div>
-          <div class="color__content__right__image" v-if="isActive8 == '11'">
+          <div class="color__content__right__image" v-if="isActive3 == '3'">
             <img src="../assets/images/ハンドルオレンジ.jpg" alt="" class="color__content__right__image--seat ">
           </div>
-          <div class="color__content__right__image" v-if="isActive9 == '12' " >
+          <div class="color__content__right__image" v-if="isActive3 == '4' " >
             <img src="../assets/images/D5B58C24-0DE1-46C6-A338-B2FA23E15018_1_105_c.jpeg" alt="" class="color__content__right__image--seat ">
           </div>
-          <div class="color__content__right__image" v-if="isActive10 == '13'">
+          <div class="color__content__right__image" v-if="isActive3 == '5'">
             <img src="../assets/images/座席オレンジ.jpg" alt="" class="color__content__right__image--seat ">
           </div>
-          <div class="color__content__right__image" v-if="isActive11 == '14'">
+          <div class="color__content__right__image" v-if="isActive3 == '6'">
             <img src="../assets/images/seat orange.jpg" alt="" class="color__content__right__image--seat ">
           </div>
           <div class="color__content__right__price">
             <div class="color__content__right__button">
               <!-- <button class="color__content__right__button--in" @click="active">インパネ</button>
               <button class="color__content__right__button--seat" @click="active2">シート</button> -->
-              <input type="radio" name="color" id="in" class="interior" v-model="isActive4" :value="7" @click="clear6" >
+              <input type="radio" name="color" id="in" class="interior" v-model="isActive2" :value="1" @click="clear6">
                 <label for="in" class="color__content__right__button--in" >インパネ</label>
-              <input type="radio" name="color" id="seat" class="interior" v-model="isActive5" :value="8" @click="clear7">
+              <input type="radio" name="color" id="seat" class="interior" v-model="isActive2" :value="2" @click="clear6">
                 <label for="seat" class="color__content__right__button--seat">シート</label>
             </div>
           </div>
-          <div class="color__content__right__color--option" v-if="isActive6 == '9' || isActive9 == '12'" >
+          <div class="color__content__right__color--option" v-if="isActive3 == '1' || isActive3 == '4'" >
             ブラック + 0円
           </div>
-          <div class="color__content__right__color--option" v-if="isActive7 == '10' || isActive10 == '13'">
+          <div class="color__content__right__color--option" v-if="isActive3 == '2' || isActive3 == '5'">
             レッド + 0円
           </div>
-          <div class="color__content__right__color--option" v-if="isActive8 == '11' || isActive11 == '14'">
+          <div class="color__content__right__color--option" v-if="isActive3 == '3' || isActive3 == '6'">
             オレンジ + 0円
           </div>
           <div class="color__content__right__color--select">
-            <input type='radio' name="inpane" class="black__seat" v-if="isActive4 == '7'" v-model="isActive6" :value="9" @click="clear8"/>
-            <input type='radio' name="inpane" class="red__seat" v-if="isActive4 == '7'" v-model="isActive7" :value="10" @click="clear9"/>
-            <input type='radio' name="inpane" class="orange__seat" v-if="isActive4 == '7'" v-model="isActive8" :value="11" @click="clear10"/>
-            <input type='radio' name="seat2" class="black__seat" v-if="isActive5 == '8'" v-model="isActive9" :value="12" @click="clear11">
-            <input type='radio' name="seat2" class="red__seat" v-if="isActive5 == '8'" v-model="isActive10" :value="13" @click="clear12">
-            <input type='radio' name="seat2" class="orange__seat" v-if="isActive5 == '8'" v-model="isActive11" :value="14" @click="clear13">
+            <input type='radio' name="inpane" class="black__seat" v-if="isActive2 == '1'" v-model="isActive3" :value="1" @click="clear7"/>
+            <input type='radio' name="inpane" class="red__seat" v-if="isActive2 == '1'" v-model="isActive3" :value="2" @click="clear7"/>
+            <input type='radio' name="inpane" class="orange__seat" v-if="isActive2 == '1'" v-model="isActive3" :value="3" @click="clear7"/>
+            <input type='radio' name="seat2" class="black__seat" v-if="isActive2 == '2'" v-model="isActive3" :value="4" @click="clear7">
+            <input type='radio' name="seat2" class="red__seat" v-if="isActive2 == '2'" v-model="isActive3" :value="5" @click="clear7">
+            <input type='radio' name="seat2" class="orange__seat" v-if="isActive2 == '2'" v-model="isActive3" :value="6" @click="clear7">
           </div>
         </div>
       </div>
@@ -229,7 +229,22 @@
             寒冷地仕様 (大型バッテリー)
           </div>
           <div v-if="opt1_use == 'true'">
-            クリスタルホワイトパール
+            ボディカラー：クリスタルホワイトパール
+          </div>
+          <div v-if="isActive == '2'">
+            ボディカラー：クリスタルブラックシリカ
+          </div>
+          <div v-if="isActive == '3'">
+            ボディカラー：ピュアレッド
+          </div>
+          <div v-if="isActive3 == '1' || isActive3 == '4'">
+            インテリアカラー：ブラック
+          </div>
+          <div v-if="isActive3 == '2' || isActive3 == '5'">
+            インテリアカラー：レッド
+          </div>
+          <div v-if="isActive3 == '3' || isActive3 == '6'">
+            インテリアカラー：オレンジ
           </div>
         </div>
         <div class="total__option__right">
@@ -259,16 +274,8 @@ export default {
     return {
       selectedKey: '',
       isActive: '2',
-      isActive2: true,
-      isActive3: false,
-      isActive4: '7',
-      isActive5: false,
-      isActive6: '9',
-      isActive7: 'false',
-      isActive8: 'false',
-      isActive9: 'false',
-      isActive10: 'false',
-      isActive11: 'false',
+      isActive2: 1,
+      isActive3: 1,
       taxRate: 0.08,
       optPrice: 0,
       opt1_use: false,              
@@ -311,69 +318,10 @@ export default {
       this.opt4_use = ''
     },
     clear6: function () {
-      this.isActive5 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
+      this.isActive2 = ''
     },
     clear7: function () {
-      this.isActive4 = ''
-      this.isActive6 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-    },
-    clear8: function () {
-      this.isActive5 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-    },
-    clear9: function () {
-      this.isActive6 = ''
-      
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-      this.isActive5 = ''
-    },
-    clear10: function () {
-      this.isActive6 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-      this.isActive5 = ''
-    },
-    clear11: function () {
-      this.isActive6 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-      this.isActive4 = ''
-    },
-    clear12: function () {
-      this.isActive6 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-      this.isActive4 = ''
-    },
-    clear13: function () {
-      this.isActive6 = ''
-      this.isActive7 = ''
-      this.isActive8 = ''
-      this.isActive9 = ''
-      this.isActive10 = ''
-      this.isActive11 = ''
-      this.isActive4 = ''
+      this.isActive3 = ''
     },
     active: function () {
       this.isActive3 = ''
