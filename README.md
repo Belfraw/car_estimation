@@ -1,12 +1,11 @@
 # CarEstimation  
 
 ## Overview  
-You can get an automatic quote for your car.  
-The total amount will change when you select an option.  
+車の見積もりアプリです。
+グレードやオプションの選択によって購入金額が変動します。
 ## Description
-I created an app using Vue.js because I wanted to challenge the frameworks other than Rails that I had studied so far. 
-The content of the app is created with reference to the 86 estimation simulator, which is my car.
-
+スクールではRailsを使用してアプリを作成していましたが、新しいことに挑戦してみたくて  
+Vue.jsでポートフォリオの作成に挑みました。  
 ## Demo  
 ![サンプル1](car.gif)
 ![サンプル2](car2.gif)
@@ -17,11 +16,14 @@ $ cd car_estimation
 $ npm run serve
 ```
 ## Anything Else
-The image is set to switch when white is selected in the color selection. 
-I was a little worried about how to display it with v-if because the additional option fee is set in v-model.
+ボディカラー選択の時ホワイトを選択するとオプション料金が発生するようにしています。  
+シート、インパネのボタンを切り替えるとシートカラー、インパネカラーの画像が同じボタンで切り替えられるようになっています。
 
-The problem is that when switching between the instrument panel image and the sheet image,
-the previously selected image remains, so I want to be able to switch it well.
-
-I'm not sure how to create a component, so I'd like to study in books and divide the code into components.
+## task  
+インパネからシートに切り替えると前の画像が残ったままなので
+この部分を上手く切り替えられるようにしたいです。
+一つのコンポーネントに機能まるごとつめこんでいるため
+上手く複数のコンポーネントに分けられるようにしたい。
 ## Deploy
+https://carestimation.herokuapp.com/
+Windowsの環境下で正常に作動しないことがあります。
